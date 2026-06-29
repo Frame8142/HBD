@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Happy 30th Birthday น้ำ ณัฐพร คำนวนดี 🎂🎉">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎂</text></svg>">
+    <title>🎂 HBD น้ำ ณัฐพร 🎉</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Itim&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Floating particles background -->
+    <div class="particles" id="particles"></div>
+
+    <!-- ===== SCREEN 1: Childhood photo ===== -->
+    <section class="screen screen-1 active" id="screen1">
+        <div class="screen-inner">
+            <div class="sparkle-text">
+                <span>✨</span> เด็กคนนี้คือใครเอ่ย? <span>✨</span>
+            </div>
+            <div class="photo-frame childhood-frame">
+                <img src="picture/รูปตอนเด็ก.jpg" alt="น้ำตอนเด็ก" id="childPhoto">
+            </div>
+            <div class="name-tag">
+                <span>👶 น้องน้ำ ณัฐพร</span>
+            </div>
+            <div class="birth-info">
+                <span>🎀 เกิดวันที่ 30 มิ.ย. 2539 🎀</span>
+            </div>
+            <button class="heart-btn" id="heartBtn" aria-label="กดเพื่อเปิดเซอร์ไพรส์">
+                <span class="heart-emoji">💖</span>
+                <span class="btn-text">กดตรงนี้เลย!</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- ===== SCREEN 2: Current photo + Birthday message ===== -->
+    <section class="screen screen-2" id="screen2">
+        <div class="screen-inner">
+            <div class="confetti-burst" id="confettiBurst"></div>
+
+            <h1 class="birthday-title" id="birthdayTitle">
+                🎉 Happy 30th Birthday! 🎂
+            </h1>
+
+            <div class="photo-frame grown-frame" id="grownFrame">
+                <img src="picture/รูปตอนโต.jpg" alt="น้ำปัจจุบัน" id="grownPhoto">
+            </div>
+
+            <div class="name-badge" id="nameBadge">
+                <span>💕 น้ำ ณัฐพร คำนวนดี 💕</span>
+            </div>
+
+            <div class="message-card" id="messageCard">
+                <p class="msg-line msg-1">
+                    ยินดีต้อนรับสู่วัยที่นอนดึกแค่คืนเดียว แต่ร่างกายเหมือนโดนรีเซ็ตใหม่ทั้งระบบ
+                    ตื่นมาเริ่มมีอาการปวดหลัง ปวดคอ ตึงไหล่ แบบที่ไม่ได้ทำอะไรเลยก็ยังเป็น 😆
+                </p>
+                <p class="msg-line msg-2">
+                    ขอให้สุขภาพแข็งแรงแบบที่ลุกจากเตียงแล้วไม่ต้องมีเสียง "โอ๊ย" ตามหลัง ขอให้ไม่ต้องค่อย ๆ
+                    พยุงตัวตอนลุก ไม่ต้องยืนนานแล้วเริ่มเวียนหัว หน้ามืด หรือรู้สึกเหมือนโลกกำลังกดไกลย้อนเอง 😂
+                </p>
+                <p class="msg-line msg-3">
+                    ขอให้ใช้ชีวิตได้แบบสบาย ๆ สนุก ๆ เหมือนเดิมทุกวัน
+                </p>
+                <p class="msg-line msg-4">
+                    ขอให้มีแต่เรื่องดี ๆ เข้ามา คิดหวังอะไรก็ขอให้สมหวัง เจอแต่คนดี ๆ และมีรอยยิ้มเยอะ ๆ ในทุกวัน 🌸
+                </p>
+                <div class="msg-footer">
+                    <span>🩷 ด้วยรักจากใจ 🩷</span>
+                </div>
+            </div>
+
+            <!-- Gift Button -->
+            <button class="gift-btn" id="giftBtn">
+                <span class="gift-icon">🎁</span>
+                <span class="gift-btn-text">กดรับของขวัญ</span>
+                <span class="gift-sparkle">✨</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- ===== SCREEN 3: Gift Card Overlay ===== -->
+    <div class="gift-overlay" id="giftOverlay">
+        <div class="gift-card-wrapper" id="giftCardWrapper">
+            <!-- Envelope -->
+            <div class="envelope" id="envelope">
+                <div class="envelope-flap" id="envelopeFlap"></div>
+                <div class="envelope-body">
+                    <div class="envelope-heart">💌</div>
+                    <div class="envelope-text">ของขวัญจากใจ</div>
+                </div>
+            </div>
+
+            <!-- Gift Card -->
+            <div class="massage-card" id="massageCard">
+                <div class="card-border-deco">
+                    <div class="card-corner tl">🌸</div>
+                    <div class="card-corner tr">🌸</div>
+                    <div class="card-corner bl">🌸</div>
+                    <div class="card-corner br">🌸</div>
+                </div>
+
+                <div class="card-header">
+                    <div class="card-header-deco">🌿</div>
+                    <h2 class="card-title">บัตรนวดแผนไทย</h2>
+                    <div class="card-header-deco">🌿</div>
+                </div>
+
+                <div class="card-divider">
+                    <span>✿</span>
+                    <div class="divider-line"></div>
+                    <span>✿</span>
+                </div>
+
+                <div class="card-present-label">มอบให้</div>
+
+                <div class="card-name-ribbon">
+                    <span>น้ำ ณัฐพร คำนวนดี</span>
+                </div>
+
+                <div class="card-age-badge">
+                    <span>อายุ 30 ปี 🎂</span>
+                </div>
+
+                <div class="card-desc">
+                    <p>ของขวัญเพื่อสุขภาพที่ดี</p>
+                    <p>ผ่อนคลายความเมื่อยล้า</p>
+                    <p>เติมพลังให้ร่างกายและใจ 💕</p>
+                </div>
+
+                <div class="card-divider">
+                    <span>✿</span>
+                    <div class="divider-line"></div>
+                    <span>✿</span>
+                </div>
+
+                <div class="card-location">
+                    <span class="location-pin">📍</span>
+                    <div class="location-text">
+                        <div class="location-label">มารับได้ที่</div>
+                        <div class="location-name">เฟรม</div>
+                    </div>
+                </div>
+
+                <div class="card-wish">
+                    <span>🩷</span> ดูแลตัวเองบ้างนะ คุณคนเก่ง <span>🩷</span>
+                </div>
+            </div>
+
+            <!-- Close button -->
+            <button class="gift-close-btn" id="giftCloseBtn">✕</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
